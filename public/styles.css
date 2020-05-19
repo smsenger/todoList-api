@@ -1,0 +1,127 @@
+
+html, 
+body, 
+button {
+    background-image: url('/images/space-background.jpg');
+    font-family: 'Montserrat', sans-serif;
+}
+
+.outer-div {
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 2px solid #9d95e2;
+    width: 40%;
+}
+
+.title {
+    color: #9d95e2;
+    border-bottom: 2px solid #9d95e2;
+    margin-left: 5px;
+}
+
+.first-add {
+    color: #9d95e2;
+    margin-left: 5px;
+    border: #9d95e2;
+    width: 100%;
+    text-align: left;
+}
+
+.first-add:hover {
+    background-image: url('/images/button-hover.jpg');
+    color: white;
+}
+
+#format-form1, 
+#format-form2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+button[type="submit"] {
+    background-color: #9d95e2;
+    border: 1px solid rgb(226, 11, 11);
+} 
+
+.task-item {
+    color: #9d95e2;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.button-div1 {
+    border-top: 1px solid #9d95e2;
+    border-bottom: 1px solid #9d95e2;
+}
+
+strong {
+    color: #9d95e2;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, 
+.collapsible:hover {
+    background-image: url('/images/button-hover.jpg');
+    color: white;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 12px;
+    display: none;
+    overflow: hidden;
+    background-color: #6c679d;
+    opacity: .8;
+    color: white;
+    
+}
+
+.button-div2 {
+    border-bottom: 1px solid #9d95e2;
+}
+
+.complete {
+    border-bottom: 1px solid #9d95e2;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.complete:hover {
+    background-image: url('/images/button-hover.jpg');
+    color: white;
+}
+
+.delete {
+    border-top: 1px solid #9d95e2;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.delete:hover {
+    background-image: url('/images/button-hover.jpg');
+    color: white;
+}
