@@ -11,19 +11,19 @@ let todoList = [
   {
     id: 1,
     todo: 'Implement a REST API',
-    details: 'from input'
+    details: 'Do computer things.'
   },
 
   {
     id: 2,
     todo: 'Market',
-    details: 'from input'
+    details: 'Advertising!'
   },
 
   {
     id: 3,
     todo: 'Make money',
-    details: 'from input'
+    details: 'This is a new thing, but you will like it.'
   },
 ];
 
