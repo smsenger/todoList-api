@@ -1,35 +1,68 @@
-
-html, 
-body, 
-button {
-    background-image: url('/images/space-background.jpg');
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    height: 200vh;
     font-family: 'Montserrat', sans-serif;
 }
 
 .outer-div {
     margin-top: 30px;
     margin-left: 30px;
-    border: 2px solid #9d95e2;
-    width: 40%;
+    border: 4px solid #9d95e2;
+    width: 350px;
+    display: inline-block;
+}
+
+.new-todo {
+    margin-left: 30px;
+    width: 350px;
+    border: 4px solid #9d95e2;
+}
+
+#add-input {
+    width: 250px;
+    padding: 10px;
+}
+
+#first-add {
+    width: 86px;
+    text-align: center;
+    padding: 10px;
+    background-color: #9d95e2;
+    border: 1px solid #fdbb2d;
+    color: white;
 }
 
 .title {
     color: #9d95e2;
-    border-bottom: 2px solid #9d95e2;
-    margin-left: 5px;
+    border-bottom: 1px solid #9d95e2;
+    margin-left: 30px;
 }
 
-.first-add {
+input[type="text"] {
     color: #9d95e2;
-    margin-left: 5px;
-    border: #9d95e2;
-    width: 100%;
-    text-align: left;
+    border: 1px #9d95e2;
 }
 
-.first-add:hover {
-    background-image: url('/images/button-hover.jpg');
-    color: white;
+input[type=text]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9d95e2;
+}
+
+
+#edit {
+    width: 100%;
+    display: flex;
+    border-bottom: 5px solid #fdbb2d;
+}
+
+.edit-input {
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+}
+
+.edit-button {
+    width: 20%;
 }
 
 #format-form1, 
@@ -40,26 +73,21 @@ button {
 
 button[type="submit"] {
     background-color: #9d95e2;
-    border: 1px solid rgb(226, 11, 11);
+    border: 1px solid #fdbb2d;
+    color: white;
 } 
 
-.task-item {
-    color: #9d95e2;
-    font-weight: bold;
-    margin-top: 35px;
-}
-
 .button-div1 {
-    border-top: 1px solid #9d95e2;
-    border-bottom: 1px solid #9d95e2;
+    border: 1px solid #fdbb2d;
 }
 
 strong {
-    color: #9d95e2;
+    color: #fdbb2d;
 }
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
+    background-color: #9d95e2;
     color: white;
     cursor: pointer;
     padding: 10px;
@@ -68,13 +96,6 @@ strong {
     text-align: left;
     outline: none;
     font-size: 15px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, 
-.collapsible:hover {
-    background-image: url('/images/button-hover.jpg');
-    color: white;
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -82,46 +103,23 @@ strong {
     padding: 0 12px;
     display: none;
     overflow: hidden;
-    background-color: #6c679d;
-    opacity: .8;
+    background-color: #9d95e2;
     color: white;
     
 }
 
 .button-div2 {
-    border-bottom: 1px solid #9d95e2;
-}
-
-.complete {
-    border-bottom: 1px solid #9d95e2;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-}
-
-.complete:hover {
-    background-image: url('/images/button-hover.jpg');
-    color: white;
+    border-bottom: 1px solid #fdbb2d;
 }
 
 .delete {
-    border-top: 1px solid #9d95e2;
+    background-color: #9d95e2;
+    border: 1px solid #fdbb2d;
     color: white;
     cursor: pointer;
     padding: 10px;
     width: 100%;
-    border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
-}
-
-.delete:hover {
-    background-image: url('/images/button-hover.jpg');
-    color: white;
 }

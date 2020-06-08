@@ -9,44 +9,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>TaskSpace</title>
 </head>
 
 <body>
     <h2 class="title">TaskSpace</h2>
-    <button type="button" value="click" class="first-add">Add task</button>
-     <div class="Container">
-        <!--<div class="outer-div">
-        <form>
-            <div class="form-row">
-                <div class="col" id="format-form2">
-                    <input type="text" class="form-control" id="description" name="item" placeholder="DetailSpace"
-                        required>
-                    <button type="submit" value="Add">
-                </div>
-            </div>
+        <form action="/api/todo?form=true" method="POST" class="new-todo">
+            <input type='text' id="add-input" name='todo' placeholder="Add a new task here!"></input>
+            <button type="submit" value="click" id="first-add">Add</button>
         </form>
-
-        <div class="task-item">
-            To do:
-        </div>
-
-        <div class="button-div1">
-            <button type="button" value="click" class="collapsible button button5"><strong>Click</strong> for task
-                details</button>
-            <div class="content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-        </div>
-
-        <div class="button-div2">
-            <button type="button" class="delete"><strong>Click</strong> to delete task</button>
-        </div>
-    </div>-->
+    </div>
+         <div class="Container">
+        <div class="row d-flex justify-content-around position-row card-row">
+    <div>
 </div> 
     <script src="./script2.js"></script>
 </body>
